@@ -26,8 +26,8 @@ public class ScooterOrderTest {
     @Parameterized.Parameters
     public static Object[][] getData() {
         return new Object[][]{
-                {MainPage.orderButtonHeader, RentPage.chooseRentTermTwoDays, RentPage.scooterColourBlack},
-                {MainPage.orderButtonBody, RentPage.chooseRentTermOneDay, RentPage.scooterColourGrey},
+                {MainPage.ORDER_BUTTON_HEADER, RentPage.CHOOSE_RENT_TERM_TWO_DAYS, RentPage.SCOOTER_COLOUR_BLACK},
+                {MainPage.ORDER_BUTTON_BODY, RentPage.CHOOSE_RENT_TERM_ONE_DAY, RentPage.SCOOTER_COLOUR_GREY},
         };
     }
     @Test

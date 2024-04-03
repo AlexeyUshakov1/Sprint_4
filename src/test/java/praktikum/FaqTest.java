@@ -24,14 +24,14 @@ public class FaqTest {
     @Parameterized.Parameters
     public static Object[][] getData() {
         return new Object[][]{
-                {"0", TextsOfFaqTest.FAQ_ANSWER_ID_0, TextsOfFaqTest.FAQ_QUESTION_ID_0},
-                {"1", TextsOfFaqTest.FAQ_ANSWER_ID_1, TextsOfFaqTest.FAQ_QUESTION_ID_1},
-                {"2", TextsOfFaqTest.FAQ_ANSWER_ID_2, TextsOfFaqTest.FAQ_QUESTION_ID_2},
-                {"3", TextsOfFaqTest.FAQ_ANSWER_ID_3, TextsOfFaqTest.FAQ_QUESTION_ID_3},
-                {"4", TextsOfFaqTest.FAQ_ANSWER_ID_4, TextsOfFaqTest.FAQ_QUESTION_ID_4},
-                {"5", TextsOfFaqTest.FAQ_ANSWER_ID_5, TextsOfFaqTest.FAQ_QUESTION_ID_5},
-                {"6", TextsOfFaqTest.FAQ_ANSWER_ID_6, TextsOfFaqTest.FAQ_QUESTION_ID_6},
-                {"7", TextsOfFaqTest.FAQ_ANSWER_ID_7, TextsOfFaqTest.FAQ_QUESTION_ID_7},
+                {TextsOfFaqTest.FAQ_ID_0, TextsOfFaqTest.FAQ_ANSWER_ID_0, TextsOfFaqTest.FAQ_QUESTION_ID_0},
+                {TextsOfFaqTest.FAQ_ID_1, TextsOfFaqTest.FAQ_ANSWER_ID_1, TextsOfFaqTest.FAQ_QUESTION_ID_1},
+                {TextsOfFaqTest.FAQ_ID_2, TextsOfFaqTest.FAQ_ANSWER_ID_2, TextsOfFaqTest.FAQ_QUESTION_ID_2},
+                {TextsOfFaqTest.FAQ_ID_3, TextsOfFaqTest.FAQ_ANSWER_ID_3, TextsOfFaqTest.FAQ_QUESTION_ID_3},
+                {TextsOfFaqTest.FAQ_ID_4, TextsOfFaqTest.FAQ_ANSWER_ID_4, TextsOfFaqTest.FAQ_QUESTION_ID_4},
+                {TextsOfFaqTest.FAQ_ID_5, TextsOfFaqTest.FAQ_ANSWER_ID_5, TextsOfFaqTest.FAQ_QUESTION_ID_5},
+                {TextsOfFaqTest.FAQ_ID_6, TextsOfFaqTest.FAQ_ANSWER_ID_6, TextsOfFaqTest.FAQ_QUESTION_ID_6},
+                {TextsOfFaqTest.FAQ_ID_7, TextsOfFaqTest.FAQ_ANSWER_ID_7, TextsOfFaqTest.FAQ_QUESTION_ID_7},
         };
     }
 
