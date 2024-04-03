@@ -22,13 +22,13 @@ public class RentPage {
     //   поле срок аренды
     final By rentTermDropDown = By.className("Dropdown-placeholder");
     // выбрать срок аренды 2 суток
-    public static final By chooseRentTermTwoDays = By.xpath("//div[contains(text(),'двое суток')]");
+    public static final By CHOOSE_RENT_TERM_TWO_DAYS = By.xpath("//div[contains(text(),'двое суток')]");
     //выбрать срок аренды сутки
-    public static final  By chooseRentTermOneDay = By.xpath("//div[contains(text(),'сутки')]");
+    public static final  By CHOOSE_RENT_TERM_ONE_DAY = By.xpath("//div[contains(text(),'сутки')]");
     //выбрать цвет черный
-    public static final By scooterColourBlack = By.xpath("//input[@id= 'black']");
+    public static final By SCOOTER_COLOUR_BLACK = By.xpath("//input[@id= 'black']");
     //выбрать цвет серый
-    public static final By scooterColourGrey = By.xpath("//input[@id= 'grey']");
+    public static final By SCOOTER_COLOUR_GREY = By.xpath("//input[@id= 'grey']");
     //поле коменметарий для курьера
     final By commentField = By.xpath("//input[@class= 'Input_Input__1iN_Z Input_Responsible__1jDKN']");
     //кнопка заказать

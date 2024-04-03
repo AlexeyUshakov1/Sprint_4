@@ -1,6 +1,16 @@
 package praktikum.pages.text;
 
 public class TextsOfFaqTest {
+    //ID ответов
+    public static final String FAQ_ID_0= "0";
+    public static final String FAQ_ID_1= "1";
+    public static final String FAQ_ID_2= "2";
+    public static final String FAQ_ID_3= "3";
+    public static final String FAQ_ID_4= "4";
+    public static final String FAQ_ID_5= "5";
+    public static final String FAQ_ID_6= "6";
+    public static final String FAQ_ID_7= "7";
+
     //ожидаемые тексты ответов
     public static final String FAQ_ANSWER_ID_0= "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
     public static final String FAQ_ANSWER_ID_1 = "Пока что у нас так: один заказ — один самокат. Если хотите " +
