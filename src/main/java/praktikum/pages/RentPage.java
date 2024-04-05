@@ -39,10 +39,10 @@ public class RentPage {
     //окно Заказ оформлен
     final By orderIsProcessedModal = By.xpath("//div[contains(text(), 'Заказ оформлен')]");
 
-    public RentPage sendDeliveryDate(){
+    public RentPage sendDeliveryDate(String deliveryDateText){
         new WebDriverWait(driver, Duration.ofSeconds(EnvConfig.DEFAULT_TIMEOUT))
                 .until(ExpectedConditions.visibilityOfElementLocated(deliveryDate));
-        driver.findElement(deliveryDate).sendKeys(TextsOrderScooter.DATA);
+        driver.findElement(deliveryDate).sendKeys(deliveryDateText);
         driver.findElement(confirmDate).click();
         return this;
     }
@@ -57,8 +57,8 @@ public class RentPage {
         driver.findElement(scooterColour).click();
         return this;
     }
-    public RentPage sendCommentToCourier(){
-        driver.findElement(commentField).sendKeys(TextsOrderScooter.COMMENT_TO_COURIER);
+    public RentPage sendCommentToCourier(String comment){
+        driver.findElement(commentField).sendKeys(comment);
         return this;
     }
     public RentPage clickOrderButton(){
