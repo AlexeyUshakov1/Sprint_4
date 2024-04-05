@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import praktikum.pages.MainPage;
 import praktikum.pages.OrderPage;
 import praktikum.pages.RentPage;
+import praktikum.pages.text.TextsOrderScooter;
 
 @RunWith(Parameterized.class)
 public class ScooterOrderTest {
@@ -38,16 +39,16 @@ public class ScooterOrderTest {
         main.acceptCookie();
         main.clickOrderButton(enterPoint); //параметризация точки входа (кнопка Заказать в header, в body)
         OrderPage order = new OrderPage(driver);
-        order.sendNameAndLastname();
-        order.sendAdresToDelivery();
+        order.sendNameAndLastname(TextsOrderScooter.NAME, TextsOrderScooter.LAST_NAME);
+        order.sendAdresToDelivery(TextsOrderScooter.ADRES);
         order.selectMetroStation();
-        order.sendPhoneNumber();
+        order.sendPhoneNumber(TextsOrderScooter.PHONE);
         order.clickButtonNext();
         RentPage rent = new RentPage(driver);
-        rent.sendDeliveryDate();
+        rent.sendDeliveryDate(TextsOrderScooter.DATA);
         rent.rentTerm(rentTern); //параметризация срока аренды (двое суток, сутки)
         rent.chooseScooterColour(scoterColour);// параметризация цвета самоката (черный , серый)
-        rent.sendCommentToCourier();
+        rent.sendCommentToCourier(TextsOrderScooter.COMMENT_TO_COURIER);
         rent.clickOrderButton();
         rent.clickOrderButtonConfirm();
         rent.modalOrderIsProcessedIsVisible();

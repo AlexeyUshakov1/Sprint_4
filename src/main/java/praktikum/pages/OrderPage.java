@@ -29,15 +29,15 @@ public class OrderPage {
     public OrderPage(WebDriver driver) {
         this.driver = driver;
     }
-    public OrderPage sendNameAndLastname(){
+    public OrderPage sendNameAndLastname(String name, String lastName){
         new WebDriverWait(driver, Duration.ofSeconds(EnvConfig.DEFAULT_TIMEOUT)).until(ExpectedConditions.
                 visibilityOfElementLocated(nameField));
-        driver.findElement(nameField).sendKeys(TextsOrderScooter.NAME);
-        driver.findElement(lastNameField).sendKeys(TextsOrderScooter.LAST_NAME);
+        driver.findElement(nameField).sendKeys(name);
+        driver.findElement(lastNameField).sendKeys(lastName);
         return this;
     }
-    public OrderPage sendAdresToDelivery(){
-        driver.findElement(adresField).sendKeys(TextsOrderScooter.ADRES);
+    public OrderPage sendAdresToDelivery(String adres){
+        driver.findElement(adresField).sendKeys(adres);
         return this;
     }
     public OrderPage selectMetroStation(){
@@ -45,8 +45,8 @@ public class OrderPage {
         driver.findElement(metroStation).click();
         return this;
     }
-    public OrderPage sendPhoneNumber(){
-        driver.findElement(phoneNumberField).sendKeys(TextsOrderScooter.PHONE);
+    public OrderPage sendPhoneNumber(String phoneNumber){
+        driver.findElement(phoneNumberField).sendKeys(phoneNumber);
         return this;
     }
     public OrderPage clickButtonNext(){
